@@ -12,10 +12,10 @@
             display: grid;
             grid-gap: 5px;
             height: 98vh;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            align-items: center;
-            justify-items: center;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(4, 100px);
+            justify-content: center;
+            align-content: center;
         }
 
         .item {
@@ -25,27 +25,28 @@
         }
 
         .item:nth-of-type(1) {
-            background: yellow;
-            align-self: stretch;
-            justify-self: stretch;
+            grid-column: 1 / -1;
+        }
+        .item:nth-of-type(11){
+            grid-column-start: 1;
+            grid-column-end: -1;
         }
     </style>
 </head>
 
 <body>
     <section class="container">
-       <div class="item">item #1</div>
-       <div class="item">item #2</div>
-       <div class="item">item #3</div>
-       <div class="item">item #4</div>
-       <div class="item">item #5</div>
-       <div class="item">item #6</div>
-       <div class="item">item #7</div>
-       <div class="item">item #8</div>
-       <div class="item">item #9</div>
-       <div class="item">item #10</div>
-       <div class="item">item #11</div>
-       <div class="item">item #12</div>
+        <div class="item">item #1</div>
+        <div class="item">item #2</div>
+        <div class="item">item #3</div>
+        <div class="item">item #4</div>
+        <div class="item">item #5</div>
+        <div class="item">item #6</div>
+        <div class="item">item #7</div>
+        <div class="item">item #8</div>
+        <div class="item">item #9</div>
+        <div class="item">item #10</div>
+        <div class="item">item #11</div>
     </section>
 </body>
 
