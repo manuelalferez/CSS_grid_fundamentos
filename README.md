@@ -1,2 +1,3 @@
 # CSS_grid_fundamentos
-CSS Grid Fundamentos
+
+Aplicación de los fundamentos de CSS Grid Layout, y una práctica de los mismos. 
